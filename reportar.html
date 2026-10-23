@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Rescate - Reportar</title>
+  </head>
+  <body>
+    <header>
+      <h1>Reporte de nuevo animal rescatado</h1>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reportar.html">Reportar rescate</a></li>
+          <li><a href="rescates.html">Casos registrados</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="formulario-rescate">
+        <h2 id="formulario-rescate">Formulario de ingreso</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Datos del animal</legend>
+
+            <label for="especie">Especie</label>
+            <input type="text" id="especie" name="especie" required />
+
+            <label for="nombre">Nombre (si tiene)</label>
+            <input type="text" id="nombre" name="nombre" />
+
+            <label for="edad">Edad estimada</label>
+            <input type="number" id="edad" name="edad" min="0" />
+
+            <label for="estado">Estado de salud inicial</label>
+            <textarea id="estado" name="estado" rows="4" required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos del rescate</legend>
+
+            <label for="ubicacion">Ubicación del rescate</label>
+            <input type="text" id="ubicacion" name="ubicacion" required />
+
+            <label for="fecha">Fecha del rescate</label>
+            <input type="date" id="fecha" name="fecha" required />
+
+            <label for="reportante">Persona que reporta</label>
+            <input type="text" id="reportante" name="reportante" required />
+          </fieldset>
+
+          <button type="submit">Guardar caso</button>
+          <button type="reset">Limpiar formulario</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Registro estructural sin estilos CSS</p>
+    </footer>
+  </body>
+</html>
